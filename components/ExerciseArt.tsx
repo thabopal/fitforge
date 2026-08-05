@@ -1,0 +1,6 @@
+export function ExerciseArt({type}:{type:string}){
+ const common={stroke:"currentColor",strokeWidth:8,strokeLinecap:"round" as const,fill:"none"};
+ if(type==="plank"||type==="pushup") return <svg viewBox="0 0 160 160"><circle cx="38" cy="58" r="10" fill="currentColor"/><path d="M49 65 L96 81 L130 88" {...common}/><path d="M74 73 L57 106" {...common}/><path d="M98 82 L116 110" {...common}/><line x1="20" y1="116" x2="142" y2="116" stroke="currentColor" strokeWidth="3" opacity=".35"/></svg>;
+ if(type==="press"||type==="shoulder") return <svg viewBox="0 0 160 160"><circle cx="80" cy="42" r="11" fill="currentColor"/><path d="M80 55 L80 104" {...common}/><path d="M80 66 L52 82 M80 66 L108 82" {...common}/><rect x="37" y="76" width="25" height="9" rx="4" fill="currentColor"/><rect x="98" y="76" width="25" height="9" rx="4" fill="currentColor"/><path d="M80 103 L58 132 M80 103 L102 132" {...common}/></svg>;
+ return <svg viewBox="0 0 160 160"><circle cx="80" cy="38" r="11" fill="currentColor"/><path d="M80 51 L80 98" {...common}/><path d="M80 68 L51 88 M80 68 L109 88" {...common}/><path d="M80 98 L56 130 M80 98 L104 130" {...common}/><rect x="38" y="84" width="25" height="9" rx="4" fill="currentColor"/><rect x="97" y="84" width="25" height="9" rx="4" fill="currentColor"/></svg>
+}

@@ -1,0 +1,4 @@
+import { recipes } from "@/lib/data";
+import { RecipeCard } from "@/components/RecipeCard";
+const days=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+export default function Meals(){return <><div className="pageHead"><div><span className="eyebrow">Weekly eating plan</span><h2>Enough variety to avoid the chicken-and-broccoli monastery</h2></div></div><div className="weekGrid">{days.map((d,i)=><article className="panel dayCard" key={d}><span className="kicker">Day {i+1}</span><h3>{d}</h3><ul><li>{recipes[(i+2)%recipes.length].name}</li><li>{recipes[5].name}</li><li>{recipes[i%recipes.length].name}</li><li>{recipes[3].name}</li></ul><b>Approx. 145–160 g protein</b></article>)}</div><h2 className="sectionTitle">Popular alternatives</h2><div className="recipeGrid">{recipes.slice(0,3).map(r=><RecipeCard key={r.slug} recipe={r}/>)}</div></>}
