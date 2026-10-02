@@ -11,7 +11,7 @@ export function FoodLogForm({ foods, entry }: { foods: Food[]; entry?: { id: str
     <label>Food<select name="foodId" required={!entry} defaultValue=""><option value="" disabled={!entry}>{entry ? `Keep recorded food · ${entry.food.name}` : "Choose a food"}</option>{foods.map(food => <option key={food.id} value={food.id}>{food.name} · {food.servingLabel}</option>)}</select></label>
     <label>Meal<select name="mealType" defaultValue={entry?.mealType ?? "breakfast"}>{mealTypes.map(meal => <option key={meal} value={meal}>{mealLabels[meal]}</option>)}</select></label>
     <label>Servings<input name="servings" type="number" min="0.01" max="9999.99" step="0.01" required defaultValue={entry?.servings ?? "1"} /></label>
-    <button className="primaryButton" disabled={pending || !foods.length}>{pending ? "Saving…" : entry ? "Save changes" : "Log food"}</button>
+    <button className="primaryButton" disabled={pending || (!entry && !foods.length)}>{pending ? "Saving…" : entry ? "Save changes" : "Log food"}</button>
     <p role="status">{state.error ?? state.success}</p>
   </form>;
 }

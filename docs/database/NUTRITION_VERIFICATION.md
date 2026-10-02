@@ -146,3 +146,13 @@ Permanent contents include the nutrition UI/services, UUID schema reconciliation
 Real record identifiers have been removed from this report; test fixtures use synthetic UUIDs. Credentials, local environment contents, endpoints, browser captures and temporary verification scripts are excluded. The schema metadata baseline contains definitions and migration hashes, not user records, credentials or connection details.
 
 Commit preparation reruns lint, TypeScript, all tests and production build locally. Production verification results above describe the completed earlier run; no production database commands are run during commit preparation. No commit, push or merge has been performed.
+
+## PR #5 fix validation — 2026-10-02
+
+This follow-up fixes canonical-food quantity-edit rounding and the forward runner's post-Nutrition baseline handling. No Neon connection, production SQL, seeding or production data changes were performed during this work.
+
+The regression demonstrates the old 5.10 g → 0.05 g → 5.00 g loss and verifies that the actual quantity-edit helper restores all original canonical macros on a 1 → 0.01 → 1 servings round trip. Additional coverage preserves meal-only snapshots, nullable legacy macros and invalid-reference/quantity failures. Forward-state tests cover a synthetic next migration, reruns, drift, ledger gaps and checksum failures.
+
+An isolated in-memory PostgreSQL (PGlite) fixture reconstructed the captured baseline columns/enums and original history, then exercised the updated runner with a local SQL adapter. Nutrition v1 and a synthetic subsequent additive migration applied successfully; check mode did not write; reruns validated the resulting live state; a mismatched post-state rolled back its DDL and ledger changes. This is local runner/SQL validation, not a verification of Neon networking or its HTTP transaction transport. Temporary fixture SQL and testing dependencies are outside the repository; no synthetic migration is added to the production manifest.
+
+Follow-up validation: lint and typecheck passed; all 16 tests passed using `node --import tsx --test lib/*.test.ts db/*.test.ts` (the equivalent runner avoids this environment's blocked tsx CLI IPC socket); production build passed with a dummy localhost database URL; `git diff --check` passed. Generated `next-env.d.ts` changes are excluded. Production `db:check` and migration commands were not run.

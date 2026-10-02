@@ -1,4 +1,24 @@
 export type MacroSnapshot = { caloriesKcal: string | null; proteinG: string | null; carbohydrateG: string | null; fatG: string | null };
+export async function editNutritionSnapshot(
+  existing: MacroSnapshot & { foodId: string | null; servings: string },
+  servings: number,
+  findFood: (id: string) => Promise<MacroSnapshot | undefined>,
+) {
+  if (Number(existing.servings) === servings) {
+    const { caloriesKcal, proteinG, carbohydrateG, fatG } = existing;
+    return { caloriesKcal, proteinG, carbohydrateG, fatG };
+  }
+  if (existing.foodId) {
+    const food = await findFood(existing.foodId);
+    if (!food) throw new Error("Recorded food is unavailable. Choose a replacement food.");
+    return scaleNutrition(food, servings);
+  }
+  // Legacy rows have no recoverable per-serving source. Preserve unknown macros
+  // and unchanged quantities; proportional edits remain limited by old precision.
+  const previous = Number(existing.servings);
+  if (!Number.isFinite(previous) || previous <= 0) throw new Error("Choose a food to replace this entry's invalid serving quantity.");
+  return scaleNutrition(existing, servings / previous);
+}
 // meal_logs stores consumed macro totals, already scaled to the logged servings.
 export function totalNutrition(entries: MacroSnapshot[]) {
   const cents = entries.reduce((total, entry) => ({

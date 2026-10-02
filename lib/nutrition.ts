@@ -2,7 +2,7 @@ import { and, asc, eq, sql } from "drizzle-orm";
 import { z } from "zod";
 import { db } from "@/db";
 import { mealLogs, foods, profiles, user } from "@/db/schema";
-import { scaleNutrition, totalNutrition } from "./nutrition-totals";
+import { editNutritionSnapshot, scaleNutrition, totalNutrition } from "./nutrition-totals";
 import type { NutritionEntryInput } from "./nutrition-input";
 
 // This checkout has no session authentication. Explicit single-user configuration.
@@ -45,8 +45,11 @@ export async function saveNutritionEntry(input: NutritionEntryInput) {
     content = { ...scaleNutrition(food, input.servings), foodId: food.id, nameSnapshot: food.name, servingLabelSnapshot: `${Number(food.defaultServingQuantity)} ${food.defaultServingUnit}`, recipeId: null, mealPlanEntryId: null };
   } else {
     if (!existing) throw new Error("Choose a food.");
-    if (Number(existing.servings) <= 0) throw new Error("Choose a food to replace this entry's invalid serving quantity.");
-    content = scaleNutrition(existing, input.servings / Number(existing.servings));
+    content = await editNutritionSnapshot(existing, input.servings, async id => {
+      // Inactive catalogue foods still provide the canonical source for old logs.
+      const [food] = await db.select().from(foods).where(eq(foods.id, id)).limit(1);
+      return food;
+    });
   }
   const values = { ...content, mealType: input.mealType, servings: input.servings.toFixed(2) };
   const rows = existing
