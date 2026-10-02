@@ -1,0 +1,5883 @@
+{
+  "columns": [
+    {
+      "table_name": "account",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "account",
+      "column_name": "account_id",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "account",
+      "column_name": "provider_id",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "account",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "account",
+      "column_name": "access_token",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "account",
+      "column_name": "refresh_token",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "account",
+      "column_name": "id_token",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "account",
+      "column_name": "access_token_expires_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "account",
+      "column_name": "refresh_token_expires_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "account",
+      "column_name": "scope",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "account",
+      "column_name": "password",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "account",
+      "column_name": "created_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "account",
+      "column_name": "updated_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "allergens",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "allergens",
+      "column_name": "name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "allergens",
+      "column_name": "slug",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "body_measurements",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "body_measurements",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "body_measurements",
+      "column_name": "measured_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "body_measurements",
+      "column_name": "weight_kg",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 5,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "body_measurements",
+      "column_name": "waist_cm",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 5,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "body_measurements",
+      "column_name": "chest_cm",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 5,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "body_measurements",
+      "column_name": "left_arm_cm",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 5,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "body_measurements",
+      "column_name": "right_arm_cm",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 5,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "body_measurements",
+      "column_name": "body_fat_percentage",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 5,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "body_measurements",
+      "column_name": "source",
+      "udt_name": "measurement_source",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": "'manual'::measurement_source",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "body_measurements",
+      "column_name": "notes",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "column_name": "log_date",
+      "udt_name": "date",
+      "data_type": "date",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "column_name": "water_ml",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": "0",
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "column_name": "steps",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": "0",
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "column_name": "creatine_g",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "NO",
+      "column_default": "'0'::numeric",
+      "numeric_precision": 4,
+      "numeric_scale": 1
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "column_name": "sleep_minutes",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "column_name": "active_energy_kcal",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "column_name": "notes",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "column_name": "source",
+      "udt_name": "measurement_source",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": "'manual'::measurement_source",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "column_name": "created_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "column_name": "updated_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "dietary_preferences",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "dietary_preferences",
+      "column_name": "name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "dietary_preferences",
+      "column_name": "slug",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "equipment",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "equipment",
+      "column_name": "name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "equipment",
+      "column_name": "slug",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercise_categories",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercise_categories",
+      "column_name": "name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercise_categories",
+      "column_name": "slug",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercise_equipment",
+      "column_name": "exercise_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercise_equipment",
+      "column_name": "equipment_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercise_media",
+      "column_name": "exercise_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercise_media",
+      "column_name": "media_asset_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercise_media",
+      "column_name": "role",
+      "udt_name": "media_role",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercise_media",
+      "column_name": "sort_order",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": "0",
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "exercise_muscle_groups",
+      "column_name": "exercise_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercise_muscle_groups",
+      "column_name": "muscle_group_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercise_muscle_groups",
+      "column_name": "role",
+      "udt_name": "muscle_role",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercise_sets",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercise_sets",
+      "column_name": "session_exercise_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercise_sets",
+      "column_name": "set_number",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "exercise_sets",
+      "column_name": "set_type",
+      "udt_name": "set_type",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": "'working'::set_type",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercise_sets",
+      "column_name": "repetitions",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "exercise_sets",
+      "column_name": "weight_kg",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 7,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "exercise_sets",
+      "column_name": "duration_seconds",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "exercise_sets",
+      "column_name": "distance_metres",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 9,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "exercise_sets",
+      "column_name": "rpe",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 3,
+      "numeric_scale": 1
+    },
+    {
+      "table_name": "exercise_sets",
+      "column_name": "completed",
+      "udt_name": "bool",
+      "data_type": "boolean",
+      "is_nullable": "NO",
+      "column_default": "true",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercises",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercises",
+      "column_name": "category_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercises",
+      "column_name": "name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercises",
+      "column_name": "slug",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercises",
+      "column_name": "description",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercises",
+      "column_name": "instructions",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercises",
+      "column_name": "common_mistakes",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercises",
+      "column_name": "difficulty",
+      "udt_name": "exercise_difficulty",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercises",
+      "column_name": "movement_pattern",
+      "udt_name": "movement_pattern",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercises",
+      "column_name": "is_unilateral",
+      "udt_name": "bool",
+      "data_type": "boolean",
+      "is_nullable": "NO",
+      "column_default": "false",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercises",
+      "column_name": "is_active",
+      "udt_name": "bool",
+      "data_type": "boolean",
+      "is_nullable": "NO",
+      "column_default": "true",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercises",
+      "column_name": "created_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "exercises",
+      "column_name": "updated_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "food_allergens",
+      "column_name": "food_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "food_allergens",
+      "column_name": "allergen_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "food_categories",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "food_categories",
+      "column_name": "name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "food_categories",
+      "column_name": "slug",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "foods",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "foods",
+      "column_name": "category_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "foods",
+      "column_name": "name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "foods",
+      "column_name": "slug",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "foods",
+      "column_name": "description",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "foods",
+      "column_name": "default_serving_quantity",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "foods",
+      "column_name": "default_serving_unit",
+      "udt_name": "serving_unit",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "foods",
+      "column_name": "calories_kcal",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "foods",
+      "column_name": "protein_g",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "foods",
+      "column_name": "carbohydrate_g",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "foods",
+      "column_name": "fat_g",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "foods",
+      "column_name": "fibre_g",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "foods",
+      "column_name": "sodium_mg",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "foods",
+      "column_name": "is_active",
+      "udt_name": "bool",
+      "data_type": "boolean",
+      "is_nullable": "NO",
+      "column_default": "true",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "foods",
+      "column_name": "created_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "foods",
+      "column_name": "updated_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_logs",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_logs",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_logs",
+      "column_name": "meal_plan_entry_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_logs",
+      "column_name": "recipe_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_logs",
+      "column_name": "logged_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_logs",
+      "column_name": "meal_type",
+      "udt_name": "meal_type",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_logs",
+      "column_name": "name_snapshot",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_logs",
+      "column_name": "servings",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "NO",
+      "column_default": "'1'::numeric",
+      "numeric_precision": 6,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "meal_logs",
+      "column_name": "calories_kcal",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "meal_logs",
+      "column_name": "protein_g",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "meal_logs",
+      "column_name": "carbohydrate_g",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "meal_logs",
+      "column_name": "fat_g",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "meal_logs",
+      "column_name": "notes",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "column_name": "meal_plan_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "column_name": "planned_date",
+      "udt_name": "date",
+      "data_type": "date",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "column_name": "meal_type",
+      "udt_name": "meal_type",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "column_name": "recipe_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "column_name": "custom_name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "column_name": "servings",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "NO",
+      "column_default": "'1'::numeric",
+      "numeric_precision": 6,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "column_name": "sort_order",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": "0",
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "meal_plans",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_plans",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_plans",
+      "column_name": "name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_plans",
+      "column_name": "starts_on",
+      "udt_name": "date",
+      "data_type": "date",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_plans",
+      "column_name": "ends_on",
+      "udt_name": "date",
+      "data_type": "date",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_plans",
+      "column_name": "status",
+      "udt_name": "plan_status",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": "'draft'::plan_status",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_plans",
+      "column_name": "created_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "meal_plans",
+      "column_name": "updated_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "media_assets",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "media_assets",
+      "column_name": "media_type",
+      "udt_name": "media_type",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "media_assets",
+      "column_name": "storage_provider",
+      "udt_name": "media_provider",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "media_assets",
+      "column_name": "url",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "media_assets",
+      "column_name": "thumbnail_url",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "media_assets",
+      "column_name": "source_url",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "media_assets",
+      "column_name": "creator_name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "media_assets",
+      "column_name": "creator_url",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "media_assets",
+      "column_name": "license_name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "media_assets",
+      "column_name": "license_url",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "media_assets",
+      "column_name": "attribution_text",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "media_assets",
+      "column_name": "external_id",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "media_assets",
+      "column_name": "is_approved",
+      "udt_name": "bool",
+      "data_type": "boolean",
+      "is_nullable": "NO",
+      "column_default": "false",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "media_assets",
+      "column_name": "last_verified_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "media_assets",
+      "column_name": "created_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "muscle_groups",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "muscle_groups",
+      "column_name": "parent_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "muscle_groups",
+      "column_name": "name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "muscle_groups",
+      "column_name": "slug",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "personal_records",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "personal_records",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "personal_records",
+      "column_name": "record_type",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "personal_records",
+      "column_name": "label",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "personal_records",
+      "column_name": "value",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 10,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "personal_records",
+      "column_name": "unit",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "personal_records",
+      "column_name": "achieved_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "personal_records",
+      "column_name": "notes",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "profiles",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "profiles",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "profiles",
+      "column_name": "date_of_birth",
+      "udt_name": "date",
+      "data_type": "date",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "profiles",
+      "column_name": "sex",
+      "udt_name": "biological_sex",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "profiles",
+      "column_name": "height_cm",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 5,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "profiles",
+      "column_name": "timezone",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "'Africa/Johannesburg'::text",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "profiles",
+      "column_name": "preferred_unit_system",
+      "udt_name": "unit_system",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": "'metric'::unit_system",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "profiles",
+      "column_name": "preferred_workout_time",
+      "udt_name": "time",
+      "data_type": "time without time zone",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "profiles",
+      "column_name": "onboarding_completed_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "profiles",
+      "column_name": "created_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "profiles",
+      "column_name": "updated_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "progress_photos",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "progress_photos",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "progress_photos",
+      "column_name": "media_asset_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "progress_photos",
+      "column_name": "pose",
+      "udt_name": "photo_pose",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "progress_photos",
+      "column_name": "captured_on",
+      "udt_name": "date",
+      "data_type": "date",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "progress_photos",
+      "column_name": "notes",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "progress_photos",
+      "column_name": "created_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_dietary_preferences",
+      "column_name": "recipe_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_dietary_preferences",
+      "column_name": "dietary_preference_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "column_name": "recipe_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "column_name": "food_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "column_name": "quantity",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "column_name": "unit",
+      "udt_name": "serving_unit",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "column_name": "preparation_note",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "column_name": "sort_order",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "recipe_media",
+      "column_name": "recipe_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_media",
+      "column_name": "media_asset_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_media",
+      "column_name": "role",
+      "udt_name": "media_role",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_media",
+      "column_name": "sort_order",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": "0",
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "recipe_steps",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_steps",
+      "column_name": "recipe_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_steps",
+      "column_name": "sort_order",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "recipe_steps",
+      "column_name": "instruction",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_tag_links",
+      "column_name": "recipe_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_tag_links",
+      "column_name": "recipe_tag_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_tags",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_tags",
+      "column_name": "name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipe_tags",
+      "column_name": "slug",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "owner_user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "slug",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "description",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "meal_type",
+      "udt_name": "meal_type",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "difficulty",
+      "udt_name": "recipe_difficulty",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "prep_minutes",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": "0",
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "cook_minutes",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": "0",
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "servings",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "NO",
+      "column_default": "'1'::numeric",
+      "numeric_precision": 6,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "calories_kcal",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "protein_g",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "carbohydrate_g",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "fat_g",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "fibre_g",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 8,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "is_public",
+      "udt_name": "bool",
+      "data_type": "boolean",
+      "is_nullable": "NO",
+      "column_default": "false",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "is_featured",
+      "udt_name": "bool",
+      "data_type": "boolean",
+      "is_nullable": "NO",
+      "column_default": "false",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "status",
+      "udt_name": "content_status",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": "'draft'::content_status",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "created_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "recipes",
+      "column_name": "updated_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "session",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "session",
+      "column_name": "expires_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "session",
+      "column_name": "token",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "session",
+      "column_name": "created_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "session",
+      "column_name": "updated_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "session",
+      "column_name": "ip_address",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "session",
+      "column_name": "user_agent",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "session",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user",
+      "column_name": "name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user",
+      "column_name": "email",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user",
+      "column_name": "email_verified",
+      "udt_name": "bool",
+      "data_type": "boolean",
+      "is_nullable": "NO",
+      "column_default": "false",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user",
+      "column_name": "image",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user",
+      "column_name": "role",
+      "udt_name": "user_role",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": "'user'::user_role",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user",
+      "column_name": "created_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user",
+      "column_name": "updated_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_allergens",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_allergens",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_allergens",
+      "column_name": "allergen_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_allergens",
+      "column_name": "severity",
+      "udt_name": "allergy_severity",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": "'mild'::allergy_severity",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_allergens",
+      "column_name": "notes",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_dietary_preferences",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_dietary_preferences",
+      "column_name": "dietary_preference_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_equipment",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_equipment",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_equipment",
+      "column_name": "equipment_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_equipment",
+      "column_name": "quantity",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": "1",
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "user_equipment",
+      "column_name": "maximum_weight_kg",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 7,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "user_goals",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_goals",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_goals",
+      "column_name": "goal_type",
+      "udt_name": "fitness_goal",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_goals",
+      "column_name": "target_weight_kg",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 5,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "user_goals",
+      "column_name": "target_date",
+      "udt_name": "date",
+      "data_type": "date",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_goals",
+      "column_name": "is_primary",
+      "udt_name": "bool",
+      "data_type": "boolean",
+      "is_nullable": "NO",
+      "column_default": "false",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_goals",
+      "column_name": "starts_on",
+      "udt_name": "date",
+      "data_type": "date",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_goals",
+      "column_name": "ends_on",
+      "udt_name": "date",
+      "data_type": "date",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_goals",
+      "column_name": "created_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_targets",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_targets",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_targets",
+      "column_name": "effective_from",
+      "udt_name": "date",
+      "data_type": "date",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_targets",
+      "column_name": "effective_to",
+      "udt_name": "date",
+      "data_type": "date",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "user_targets",
+      "column_name": "calorie_target_kcal",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "user_targets",
+      "column_name": "protein_target_min_g",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "user_targets",
+      "column_name": "protein_target_max_g",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "user_targets",
+      "column_name": "water_target_ml",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "user_targets",
+      "column_name": "step_target",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "user_targets",
+      "column_name": "creatine_target_g",
+      "udt_name": "numeric",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 4,
+      "numeric_scale": 1
+    },
+    {
+      "table_name": "user_targets",
+      "column_name": "workout_days_per_week",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "user_targets",
+      "column_name": "created_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "verification",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "verification",
+      "column_name": "identifier",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "verification",
+      "column_name": "value",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "verification",
+      "column_name": "expires_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "verification",
+      "column_name": "created_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "verification",
+      "column_name": "updated_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "column_name": "workout_day_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "column_name": "exercise_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "column_name": "sort_order",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "column_name": "target_sets",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "column_name": "target_reps_min",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "column_name": "target_reps_max",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "column_name": "target_duration_seconds",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "column_name": "rest_seconds",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "column_name": "tempo",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "column_name": "notes",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_days",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_days",
+      "column_name": "workout_plan_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_days",
+      "column_name": "day_number",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "workout_days",
+      "column_name": "name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_days",
+      "column_name": "description",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_days",
+      "column_name": "estimated_minutes",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "workout_plans",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_plans",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_plans",
+      "column_name": "name",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_plans",
+      "column_name": "description",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_plans",
+      "column_name": "goal_type",
+      "udt_name": "fitness_goal",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_plans",
+      "column_name": "days_per_week",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "workout_plans",
+      "column_name": "status",
+      "udt_name": "plan_status",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": "'draft'::plan_status",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_plans",
+      "column_name": "starts_on",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_plans",
+      "column_name": "ends_on",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_plans",
+      "column_name": "created_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_plans",
+      "column_name": "updated_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_session_exercises",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_session_exercises",
+      "column_name": "workout_session_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_session_exercises",
+      "column_name": "exercise_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_session_exercises",
+      "column_name": "name_snapshot",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_session_exercises",
+      "column_name": "sort_order",
+      "udt_name": "int4",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "workout_session_exercises",
+      "column_name": "notes",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_sessions",
+      "column_name": "id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": "gen_random_uuid()",
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_sessions",
+      "column_name": "user_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_sessions",
+      "column_name": "workout_plan_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_sessions",
+      "column_name": "workout_day_id",
+      "udt_name": "uuid",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_sessions",
+      "column_name": "name_snapshot",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_sessions",
+      "column_name": "started_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_sessions",
+      "column_name": "completed_at",
+      "udt_name": "timestamptz",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_sessions",
+      "column_name": "status",
+      "udt_name": "workout_session_status",
+      "data_type": "USER-DEFINED",
+      "is_nullable": "NO",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "workout_sessions",
+      "column_name": "notes",
+      "udt_name": "text",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    }
+  ],
+  "constraints": [
+    {
+      "table_name": "\"user\"",
+      "conname": "user_created_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL created_at"
+    },
+    {
+      "table_name": "\"user\"",
+      "conname": "user_email_not_null",
+      "contype": "n",
+      "definition": "NOT NULL email"
+    },
+    {
+      "table_name": "\"user\"",
+      "conname": "user_email_verified_not_null",
+      "contype": "n",
+      "definition": "NOT NULL email_verified"
+    },
+    {
+      "table_name": "\"user\"",
+      "conname": "user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "\"user\"",
+      "conname": "user_name_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name"
+    },
+    {
+      "table_name": "\"user\"",
+      "conname": "user_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "\"user\"",
+      "conname": "user_role_not_null",
+      "contype": "n",
+      "definition": "NOT NULL role"
+    },
+    {
+      "table_name": "\"user\"",
+      "conname": "user_updated_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL updated_at"
+    },
+    {
+      "table_name": "account",
+      "conname": "account_account_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL account_id"
+    },
+    {
+      "table_name": "account",
+      "conname": "account_created_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL created_at"
+    },
+    {
+      "table_name": "account",
+      "conname": "account_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "account",
+      "conname": "account_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "account",
+      "conname": "account_provider_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL provider_id"
+    },
+    {
+      "table_name": "account",
+      "conname": "account_updated_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL updated_at"
+    },
+    {
+      "table_name": "account",
+      "conname": "account_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "account",
+      "conname": "account_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "allergens",
+      "conname": "allergens_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "allergens",
+      "conname": "allergens_name_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name"
+    },
+    {
+      "table_name": "allergens",
+      "conname": "allergens_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "allergens",
+      "conname": "allergens_slug_not_null",
+      "contype": "n",
+      "definition": "NOT NULL slug"
+    },
+    {
+      "table_name": "allergens",
+      "conname": "allergens_slug_unique",
+      "contype": "u",
+      "definition": "UNIQUE (slug)"
+    },
+    {
+      "table_name": "body_measurements",
+      "conname": "body_measurements_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "body_measurements",
+      "conname": "body_measurements_measured_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL measured_at"
+    },
+    {
+      "table_name": "body_measurements",
+      "conname": "body_measurements_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "body_measurements",
+      "conname": "body_measurements_source_not_null",
+      "contype": "n",
+      "definition": "NOT NULL source"
+    },
+    {
+      "table_name": "body_measurements",
+      "conname": "body_measurements_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "body_measurements",
+      "conname": "body_measurements_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "conname": "daily_habit_logs_created_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL created_at"
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "conname": "daily_habit_logs_creatine_g_not_null",
+      "contype": "n",
+      "definition": "NOT NULL creatine_g"
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "conname": "daily_habit_logs_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "conname": "daily_habit_logs_log_date_not_null",
+      "contype": "n",
+      "definition": "NOT NULL log_date"
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "conname": "daily_habit_logs_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "conname": "daily_habit_logs_source_not_null",
+      "contype": "n",
+      "definition": "NOT NULL source"
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "conname": "daily_habit_logs_steps_not_null",
+      "contype": "n",
+      "definition": "NOT NULL steps"
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "conname": "daily_habit_logs_updated_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL updated_at"
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "conname": "daily_habit_logs_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "conname": "daily_habit_logs_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "daily_habit_logs",
+      "conname": "daily_habit_logs_water_ml_not_null",
+      "contype": "n",
+      "definition": "NOT NULL water_ml"
+    },
+    {
+      "table_name": "dietary_preferences",
+      "conname": "dietary_preferences_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "dietary_preferences",
+      "conname": "dietary_preferences_name_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name"
+    },
+    {
+      "table_name": "dietary_preferences",
+      "conname": "dietary_preferences_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "dietary_preferences",
+      "conname": "dietary_preferences_slug_not_null",
+      "contype": "n",
+      "definition": "NOT NULL slug"
+    },
+    {
+      "table_name": "dietary_preferences",
+      "conname": "dietary_preferences_slug_unique",
+      "contype": "u",
+      "definition": "UNIQUE (slug)"
+    },
+    {
+      "table_name": "equipment",
+      "conname": "equipment_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "equipment",
+      "conname": "equipment_name_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name"
+    },
+    {
+      "table_name": "equipment",
+      "conname": "equipment_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "equipment",
+      "conname": "equipment_slug_not_null",
+      "contype": "n",
+      "definition": "NOT NULL slug"
+    },
+    {
+      "table_name": "equipment",
+      "conname": "equipment_slug_unique",
+      "contype": "u",
+      "definition": "UNIQUE (slug)"
+    },
+    {
+      "table_name": "exercise_categories",
+      "conname": "exercise_categories_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "exercise_categories",
+      "conname": "exercise_categories_name_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name"
+    },
+    {
+      "table_name": "exercise_categories",
+      "conname": "exercise_categories_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "exercise_categories",
+      "conname": "exercise_categories_slug_not_null",
+      "contype": "n",
+      "definition": "NOT NULL slug"
+    },
+    {
+      "table_name": "exercise_categories",
+      "conname": "exercise_categories_slug_unique",
+      "contype": "u",
+      "definition": "UNIQUE (slug)"
+    },
+    {
+      "table_name": "exercise_equipment",
+      "conname": "exercise_equipment_equipment_id_equipment_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (equipment_id) REFERENCES equipment(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "exercise_equipment",
+      "conname": "exercise_equipment_equipment_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL equipment_id"
+    },
+    {
+      "table_name": "exercise_equipment",
+      "conname": "exercise_equipment_exercise_id_exercises_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (exercise_id) REFERENCES exercises(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "exercise_equipment",
+      "conname": "exercise_equipment_exercise_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL exercise_id"
+    },
+    {
+      "table_name": "exercise_media",
+      "conname": "exercise_media_exercise_id_exercises_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (exercise_id) REFERENCES exercises(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "exercise_media",
+      "conname": "exercise_media_exercise_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL exercise_id"
+    },
+    {
+      "table_name": "exercise_media",
+      "conname": "exercise_media_media_asset_id_media_assets_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (media_asset_id) REFERENCES media_assets(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "exercise_media",
+      "conname": "exercise_media_media_asset_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL media_asset_id"
+    },
+    {
+      "table_name": "exercise_media",
+      "conname": "exercise_media_role_not_null",
+      "contype": "n",
+      "definition": "NOT NULL role"
+    },
+    {
+      "table_name": "exercise_media",
+      "conname": "exercise_media_sort_order_not_null",
+      "contype": "n",
+      "definition": "NOT NULL sort_order"
+    },
+    {
+      "table_name": "exercise_muscle_groups",
+      "conname": "exercise_muscle_groups_exercise_id_exercises_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (exercise_id) REFERENCES exercises(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "exercise_muscle_groups",
+      "conname": "exercise_muscle_groups_exercise_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL exercise_id"
+    },
+    {
+      "table_name": "exercise_muscle_groups",
+      "conname": "exercise_muscle_groups_muscle_group_id_muscle_groups_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (muscle_group_id) REFERENCES muscle_groups(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "exercise_muscle_groups",
+      "conname": "exercise_muscle_groups_muscle_group_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL muscle_group_id"
+    },
+    {
+      "table_name": "exercise_muscle_groups",
+      "conname": "exercise_muscle_groups_role_not_null",
+      "contype": "n",
+      "definition": "NOT NULL role"
+    },
+    {
+      "table_name": "exercise_sets",
+      "conname": "exercise_sets_completed_not_null",
+      "contype": "n",
+      "definition": "NOT NULL completed"
+    },
+    {
+      "table_name": "exercise_sets",
+      "conname": "exercise_sets_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "exercise_sets",
+      "conname": "exercise_sets_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "exercise_sets",
+      "conname": "exercise_sets_session_exercise_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL session_exercise_id"
+    },
+    {
+      "table_name": "exercise_sets",
+      "conname": "exercise_sets_session_exercise_id_workout_session_exercises_id_",
+      "contype": "f",
+      "definition": "FOREIGN KEY (session_exercise_id) REFERENCES workout_session_exercises(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "exercise_sets",
+      "conname": "exercise_sets_set_number_not_null",
+      "contype": "n",
+      "definition": "NOT NULL set_number"
+    },
+    {
+      "table_name": "exercise_sets",
+      "conname": "exercise_sets_set_type_not_null",
+      "contype": "n",
+      "definition": "NOT NULL set_type"
+    },
+    {
+      "table_name": "exercises",
+      "conname": "exercises_category_id_exercise_categories_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (category_id) REFERENCES exercise_categories(id)"
+    },
+    {
+      "table_name": "exercises",
+      "conname": "exercises_category_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL category_id"
+    },
+    {
+      "table_name": "exercises",
+      "conname": "exercises_created_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL created_at"
+    },
+    {
+      "table_name": "exercises",
+      "conname": "exercises_difficulty_not_null",
+      "contype": "n",
+      "definition": "NOT NULL difficulty"
+    },
+    {
+      "table_name": "exercises",
+      "conname": "exercises_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "exercises",
+      "conname": "exercises_instructions_not_null",
+      "contype": "n",
+      "definition": "NOT NULL instructions"
+    },
+    {
+      "table_name": "exercises",
+      "conname": "exercises_is_active_not_null",
+      "contype": "n",
+      "definition": "NOT NULL is_active"
+    },
+    {
+      "table_name": "exercises",
+      "conname": "exercises_is_unilateral_not_null",
+      "contype": "n",
+      "definition": "NOT NULL is_unilateral"
+    },
+    {
+      "table_name": "exercises",
+      "conname": "exercises_name_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name"
+    },
+    {
+      "table_name": "exercises",
+      "conname": "exercises_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "exercises",
+      "conname": "exercises_slug_not_null",
+      "contype": "n",
+      "definition": "NOT NULL slug"
+    },
+    {
+      "table_name": "exercises",
+      "conname": "exercises_slug_unique",
+      "contype": "u",
+      "definition": "UNIQUE (slug)"
+    },
+    {
+      "table_name": "exercises",
+      "conname": "exercises_updated_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL updated_at"
+    },
+    {
+      "table_name": "food_allergens",
+      "conname": "food_allergens_allergen_id_allergens_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (allergen_id) REFERENCES allergens(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "food_allergens",
+      "conname": "food_allergens_allergen_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL allergen_id"
+    },
+    {
+      "table_name": "food_allergens",
+      "conname": "food_allergens_food_id_foods_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (food_id) REFERENCES foods(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "food_allergens",
+      "conname": "food_allergens_food_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL food_id"
+    },
+    {
+      "table_name": "food_categories",
+      "conname": "food_categories_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "food_categories",
+      "conname": "food_categories_name_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name"
+    },
+    {
+      "table_name": "food_categories",
+      "conname": "food_categories_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "food_categories",
+      "conname": "food_categories_slug_not_null",
+      "contype": "n",
+      "definition": "NOT NULL slug"
+    },
+    {
+      "table_name": "food_categories",
+      "conname": "food_categories_slug_unique",
+      "contype": "u",
+      "definition": "UNIQUE (slug)"
+    },
+    {
+      "table_name": "foods",
+      "conname": "foods_calories_kcal_not_null",
+      "contype": "n",
+      "definition": "NOT NULL calories_kcal"
+    },
+    {
+      "table_name": "foods",
+      "conname": "foods_carbohydrate_g_not_null",
+      "contype": "n",
+      "definition": "NOT NULL carbohydrate_g"
+    },
+    {
+      "table_name": "foods",
+      "conname": "foods_category_id_food_categories_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (category_id) REFERENCES food_categories(id) ON DELETE SET NULL"
+    },
+    {
+      "table_name": "foods",
+      "conname": "foods_created_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL created_at"
+    },
+    {
+      "table_name": "foods",
+      "conname": "foods_default_serving_quantity_not_null",
+      "contype": "n",
+      "definition": "NOT NULL default_serving_quantity"
+    },
+    {
+      "table_name": "foods",
+      "conname": "foods_default_serving_unit_not_null",
+      "contype": "n",
+      "definition": "NOT NULL default_serving_unit"
+    },
+    {
+      "table_name": "foods",
+      "conname": "foods_fat_g_not_null",
+      "contype": "n",
+      "definition": "NOT NULL fat_g"
+    },
+    {
+      "table_name": "foods",
+      "conname": "foods_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "foods",
+      "conname": "foods_is_active_not_null",
+      "contype": "n",
+      "definition": "NOT NULL is_active"
+    },
+    {
+      "table_name": "foods",
+      "conname": "foods_name_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name"
+    },
+    {
+      "table_name": "foods",
+      "conname": "foods_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "foods",
+      "conname": "foods_protein_g_not_null",
+      "contype": "n",
+      "definition": "NOT NULL protein_g"
+    },
+    {
+      "table_name": "foods",
+      "conname": "foods_slug_not_null",
+      "contype": "n",
+      "definition": "NOT NULL slug"
+    },
+    {
+      "table_name": "foods",
+      "conname": "foods_slug_unique",
+      "contype": "u",
+      "definition": "UNIQUE (slug)"
+    },
+    {
+      "table_name": "foods",
+      "conname": "foods_updated_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL updated_at"
+    },
+    {
+      "table_name": "meal_logs",
+      "conname": "meal_logs_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "meal_logs",
+      "conname": "meal_logs_logged_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL logged_at"
+    },
+    {
+      "table_name": "meal_logs",
+      "conname": "meal_logs_meal_plan_entry_id_meal_plan_entries_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (meal_plan_entry_id) REFERENCES meal_plan_entries(id) ON DELETE SET NULL"
+    },
+    {
+      "table_name": "meal_logs",
+      "conname": "meal_logs_meal_type_not_null",
+      "contype": "n",
+      "definition": "NOT NULL meal_type"
+    },
+    {
+      "table_name": "meal_logs",
+      "conname": "meal_logs_name_snapshot_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name_snapshot"
+    },
+    {
+      "table_name": "meal_logs",
+      "conname": "meal_logs_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "meal_logs",
+      "conname": "meal_logs_recipe_id_recipes_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE SET NULL"
+    },
+    {
+      "table_name": "meal_logs",
+      "conname": "meal_logs_servings_not_null",
+      "contype": "n",
+      "definition": "NOT NULL servings"
+    },
+    {
+      "table_name": "meal_logs",
+      "conname": "meal_logs_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "meal_logs",
+      "conname": "meal_logs_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "conname": "meal_plan_entries_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "conname": "meal_plan_entries_meal_plan_id_meal_plans_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (meal_plan_id) REFERENCES meal_plans(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "conname": "meal_plan_entries_meal_plan_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL meal_plan_id"
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "conname": "meal_plan_entries_meal_type_not_null",
+      "contype": "n",
+      "definition": "NOT NULL meal_type"
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "conname": "meal_plan_entries_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "conname": "meal_plan_entries_planned_date_not_null",
+      "contype": "n",
+      "definition": "NOT NULL planned_date"
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "conname": "meal_plan_entries_recipe_id_recipes_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE SET NULL"
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "conname": "meal_plan_entries_servings_not_null",
+      "contype": "n",
+      "definition": "NOT NULL servings"
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "conname": "meal_plan_entries_sort_order_not_null",
+      "contype": "n",
+      "definition": "NOT NULL sort_order"
+    },
+    {
+      "table_name": "meal_plan_entries",
+      "conname": "meal_plan_entry_content_check",
+      "contype": "c",
+      "definition": "CHECK (((recipe_id IS NOT NULL) OR (custom_name IS NOT NULL)))"
+    },
+    {
+      "table_name": "meal_plans",
+      "conname": "meal_plans_created_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL created_at"
+    },
+    {
+      "table_name": "meal_plans",
+      "conname": "meal_plans_ends_on_not_null",
+      "contype": "n",
+      "definition": "NOT NULL ends_on"
+    },
+    {
+      "table_name": "meal_plans",
+      "conname": "meal_plans_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "meal_plans",
+      "conname": "meal_plans_name_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name"
+    },
+    {
+      "table_name": "meal_plans",
+      "conname": "meal_plans_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "meal_plans",
+      "conname": "meal_plans_starts_on_not_null",
+      "contype": "n",
+      "definition": "NOT NULL starts_on"
+    },
+    {
+      "table_name": "meal_plans",
+      "conname": "meal_plans_status_not_null",
+      "contype": "n",
+      "definition": "NOT NULL status"
+    },
+    {
+      "table_name": "meal_plans",
+      "conname": "meal_plans_updated_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL updated_at"
+    },
+    {
+      "table_name": "meal_plans",
+      "conname": "meal_plans_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "meal_plans",
+      "conname": "meal_plans_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "media_assets",
+      "conname": "media_assets_created_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL created_at"
+    },
+    {
+      "table_name": "media_assets",
+      "conname": "media_assets_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "media_assets",
+      "conname": "media_assets_is_approved_not_null",
+      "contype": "n",
+      "definition": "NOT NULL is_approved"
+    },
+    {
+      "table_name": "media_assets",
+      "conname": "media_assets_media_type_not_null",
+      "contype": "n",
+      "definition": "NOT NULL media_type"
+    },
+    {
+      "table_name": "media_assets",
+      "conname": "media_assets_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "media_assets",
+      "conname": "media_assets_storage_provider_not_null",
+      "contype": "n",
+      "definition": "NOT NULL storage_provider"
+    },
+    {
+      "table_name": "media_assets",
+      "conname": "media_assets_url_not_null",
+      "contype": "n",
+      "definition": "NOT NULL url"
+    },
+    {
+      "table_name": "muscle_groups",
+      "conname": "muscle_groups_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "muscle_groups",
+      "conname": "muscle_groups_name_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name"
+    },
+    {
+      "table_name": "muscle_groups",
+      "conname": "muscle_groups_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "muscle_groups",
+      "conname": "muscle_groups_slug_not_null",
+      "contype": "n",
+      "definition": "NOT NULL slug"
+    },
+    {
+      "table_name": "muscle_groups",
+      "conname": "muscle_groups_slug_unique",
+      "contype": "u",
+      "definition": "UNIQUE (slug)"
+    },
+    {
+      "table_name": "personal_records",
+      "conname": "personal_records_achieved_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL achieved_at"
+    },
+    {
+      "table_name": "personal_records",
+      "conname": "personal_records_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "personal_records",
+      "conname": "personal_records_label_not_null",
+      "contype": "n",
+      "definition": "NOT NULL label"
+    },
+    {
+      "table_name": "personal_records",
+      "conname": "personal_records_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "personal_records",
+      "conname": "personal_records_record_type_not_null",
+      "contype": "n",
+      "definition": "NOT NULL record_type"
+    },
+    {
+      "table_name": "personal_records",
+      "conname": "personal_records_unit_not_null",
+      "contype": "n",
+      "definition": "NOT NULL unit"
+    },
+    {
+      "table_name": "personal_records",
+      "conname": "personal_records_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "personal_records",
+      "conname": "personal_records_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "personal_records",
+      "conname": "personal_records_value_not_null",
+      "contype": "n",
+      "definition": "NOT NULL value"
+    },
+    {
+      "table_name": "profiles",
+      "conname": "profiles_created_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL created_at"
+    },
+    {
+      "table_name": "profiles",
+      "conname": "profiles_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "profiles",
+      "conname": "profiles_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "profiles",
+      "conname": "profiles_preferred_unit_system_not_null",
+      "contype": "n",
+      "definition": "NOT NULL preferred_unit_system"
+    },
+    {
+      "table_name": "profiles",
+      "conname": "profiles_timezone_not_null",
+      "contype": "n",
+      "definition": "NOT NULL timezone"
+    },
+    {
+      "table_name": "profiles",
+      "conname": "profiles_updated_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL updated_at"
+    },
+    {
+      "table_name": "profiles",
+      "conname": "profiles_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "profiles",
+      "conname": "profiles_user_id_unique",
+      "contype": "u",
+      "definition": "UNIQUE (user_id)"
+    },
+    {
+      "table_name": "profiles",
+      "conname": "profiles_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "progress_photos",
+      "conname": "progress_photos_captured_on_not_null",
+      "contype": "n",
+      "definition": "NOT NULL captured_on"
+    },
+    {
+      "table_name": "progress_photos",
+      "conname": "progress_photos_created_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL created_at"
+    },
+    {
+      "table_name": "progress_photos",
+      "conname": "progress_photos_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "progress_photos",
+      "conname": "progress_photos_media_asset_id_media_assets_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (media_asset_id) REFERENCES media_assets(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "progress_photos",
+      "conname": "progress_photos_media_asset_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL media_asset_id"
+    },
+    {
+      "table_name": "progress_photos",
+      "conname": "progress_photos_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "progress_photos",
+      "conname": "progress_photos_pose_not_null",
+      "contype": "n",
+      "definition": "NOT NULL pose"
+    },
+    {
+      "table_name": "progress_photos",
+      "conname": "progress_photos_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "progress_photos",
+      "conname": "progress_photos_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "recipe_dietary_preferences",
+      "conname": "recipe_dietary_preferences_dietary_preference_id_dietary_prefer",
+      "contype": "f",
+      "definition": "FOREIGN KEY (dietary_preference_id) REFERENCES dietary_preferences(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "recipe_dietary_preferences",
+      "conname": "recipe_dietary_preferences_dietary_preference_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL dietary_preference_id"
+    },
+    {
+      "table_name": "recipe_dietary_preferences",
+      "conname": "recipe_dietary_preferences_recipe_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL recipe_id"
+    },
+    {
+      "table_name": "recipe_dietary_preferences",
+      "conname": "recipe_dietary_preferences_recipe_id_recipes_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "conname": "recipe_ingredients_food_id_foods_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (food_id) REFERENCES foods(id)"
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "conname": "recipe_ingredients_food_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL food_id"
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "conname": "recipe_ingredients_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "conname": "recipe_ingredients_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "conname": "recipe_ingredients_quantity_not_null",
+      "contype": "n",
+      "definition": "NOT NULL quantity"
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "conname": "recipe_ingredients_recipe_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL recipe_id"
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "conname": "recipe_ingredients_recipe_id_recipes_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "conname": "recipe_ingredients_sort_order_not_null",
+      "contype": "n",
+      "definition": "NOT NULL sort_order"
+    },
+    {
+      "table_name": "recipe_ingredients",
+      "conname": "recipe_ingredients_unit_not_null",
+      "contype": "n",
+      "definition": "NOT NULL unit"
+    },
+    {
+      "table_name": "recipe_media",
+      "conname": "recipe_media_media_asset_id_media_assets_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (media_asset_id) REFERENCES media_assets(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "recipe_media",
+      "conname": "recipe_media_media_asset_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL media_asset_id"
+    },
+    {
+      "table_name": "recipe_media",
+      "conname": "recipe_media_recipe_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL recipe_id"
+    },
+    {
+      "table_name": "recipe_media",
+      "conname": "recipe_media_recipe_id_recipes_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "recipe_media",
+      "conname": "recipe_media_role_not_null",
+      "contype": "n",
+      "definition": "NOT NULL role"
+    },
+    {
+      "table_name": "recipe_media",
+      "conname": "recipe_media_sort_order_not_null",
+      "contype": "n",
+      "definition": "NOT NULL sort_order"
+    },
+    {
+      "table_name": "recipe_steps",
+      "conname": "recipe_steps_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "recipe_steps",
+      "conname": "recipe_steps_instruction_not_null",
+      "contype": "n",
+      "definition": "NOT NULL instruction"
+    },
+    {
+      "table_name": "recipe_steps",
+      "conname": "recipe_steps_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "recipe_steps",
+      "conname": "recipe_steps_recipe_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL recipe_id"
+    },
+    {
+      "table_name": "recipe_steps",
+      "conname": "recipe_steps_recipe_id_recipes_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "recipe_steps",
+      "conname": "recipe_steps_sort_order_not_null",
+      "contype": "n",
+      "definition": "NOT NULL sort_order"
+    },
+    {
+      "table_name": "recipe_tag_links",
+      "conname": "recipe_tag_links_recipe_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL recipe_id"
+    },
+    {
+      "table_name": "recipe_tag_links",
+      "conname": "recipe_tag_links_recipe_id_recipes_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "recipe_tag_links",
+      "conname": "recipe_tag_links_recipe_tag_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL recipe_tag_id"
+    },
+    {
+      "table_name": "recipe_tag_links",
+      "conname": "recipe_tag_links_recipe_tag_id_recipe_tags_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (recipe_tag_id) REFERENCES recipe_tags(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "recipe_tags",
+      "conname": "recipe_tags_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "recipe_tags",
+      "conname": "recipe_tags_name_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name"
+    },
+    {
+      "table_name": "recipe_tags",
+      "conname": "recipe_tags_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "recipe_tags",
+      "conname": "recipe_tags_slug_not_null",
+      "contype": "n",
+      "definition": "NOT NULL slug"
+    },
+    {
+      "table_name": "recipe_tags",
+      "conname": "recipe_tags_slug_unique",
+      "contype": "u",
+      "definition": "UNIQUE (slug)"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_cook_minutes_not_null",
+      "contype": "n",
+      "definition": "NOT NULL cook_minutes"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_created_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL created_at"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_difficulty_not_null",
+      "contype": "n",
+      "definition": "NOT NULL difficulty"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_is_featured_not_null",
+      "contype": "n",
+      "definition": "NOT NULL is_featured"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_is_public_not_null",
+      "contype": "n",
+      "definition": "NOT NULL is_public"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_meal_type_not_null",
+      "contype": "n",
+      "definition": "NOT NULL meal_type"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_name_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_owner_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (owner_user_id) REFERENCES \"user\"(id) ON DELETE SET NULL"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_prep_minutes_not_null",
+      "contype": "n",
+      "definition": "NOT NULL prep_minutes"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_servings_not_null",
+      "contype": "n",
+      "definition": "NOT NULL servings"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_slug_not_null",
+      "contype": "n",
+      "definition": "NOT NULL slug"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_slug_unique",
+      "contype": "u",
+      "definition": "UNIQUE (slug)"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_status_not_null",
+      "contype": "n",
+      "definition": "NOT NULL status"
+    },
+    {
+      "table_name": "recipes",
+      "conname": "recipes_updated_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL updated_at"
+    },
+    {
+      "table_name": "session",
+      "conname": "session_created_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL created_at"
+    },
+    {
+      "table_name": "session",
+      "conname": "session_expires_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL expires_at"
+    },
+    {
+      "table_name": "session",
+      "conname": "session_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "session",
+      "conname": "session_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "session",
+      "conname": "session_token_not_null",
+      "contype": "n",
+      "definition": "NOT NULL token"
+    },
+    {
+      "table_name": "session",
+      "conname": "session_updated_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL updated_at"
+    },
+    {
+      "table_name": "session",
+      "conname": "session_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "session",
+      "conname": "session_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "user_allergens",
+      "conname": "user_allergens_allergen_id_allergens_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (allergen_id) REFERENCES allergens(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "user_allergens",
+      "conname": "user_allergens_allergen_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL allergen_id"
+    },
+    {
+      "table_name": "user_allergens",
+      "conname": "user_allergens_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "user_allergens",
+      "conname": "user_allergens_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "user_allergens",
+      "conname": "user_allergens_severity_not_null",
+      "contype": "n",
+      "definition": "NOT NULL severity"
+    },
+    {
+      "table_name": "user_allergens",
+      "conname": "user_allergens_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "user_allergens",
+      "conname": "user_allergens_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "user_dietary_preferences",
+      "conname": "user_dietary_preferences_dietary_preference_id_dietary_preferen",
+      "contype": "f",
+      "definition": "FOREIGN KEY (dietary_preference_id) REFERENCES dietary_preferences(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "user_dietary_preferences",
+      "conname": "user_dietary_preferences_dietary_preference_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL dietary_preference_id"
+    },
+    {
+      "table_name": "user_dietary_preferences",
+      "conname": "user_dietary_preferences_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "user_dietary_preferences",
+      "conname": "user_dietary_preferences_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "user_equipment",
+      "conname": "user_equipment_equipment_id_equipment_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (equipment_id) REFERENCES equipment(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "user_equipment",
+      "conname": "user_equipment_equipment_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL equipment_id"
+    },
+    {
+      "table_name": "user_equipment",
+      "conname": "user_equipment_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "user_equipment",
+      "conname": "user_equipment_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "user_equipment",
+      "conname": "user_equipment_quantity_not_null",
+      "contype": "n",
+      "definition": "NOT NULL quantity"
+    },
+    {
+      "table_name": "user_equipment",
+      "conname": "user_equipment_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "user_equipment",
+      "conname": "user_equipment_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "user_goals",
+      "conname": "user_goals_created_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL created_at"
+    },
+    {
+      "table_name": "user_goals",
+      "conname": "user_goals_goal_type_not_null",
+      "contype": "n",
+      "definition": "NOT NULL goal_type"
+    },
+    {
+      "table_name": "user_goals",
+      "conname": "user_goals_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "user_goals",
+      "conname": "user_goals_is_primary_not_null",
+      "contype": "n",
+      "definition": "NOT NULL is_primary"
+    },
+    {
+      "table_name": "user_goals",
+      "conname": "user_goals_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "user_goals",
+      "conname": "user_goals_starts_on_not_null",
+      "contype": "n",
+      "definition": "NOT NULL starts_on"
+    },
+    {
+      "table_name": "user_goals",
+      "conname": "user_goals_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "user_goals",
+      "conname": "user_goals_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "user_targets",
+      "conname": "user_targets_created_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL created_at"
+    },
+    {
+      "table_name": "user_targets",
+      "conname": "user_targets_effective_from_not_null",
+      "contype": "n",
+      "definition": "NOT NULL effective_from"
+    },
+    {
+      "table_name": "user_targets",
+      "conname": "user_targets_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "user_targets",
+      "conname": "user_targets_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "user_targets",
+      "conname": "user_targets_protein_target_max_g_not_null",
+      "contype": "n",
+      "definition": "NOT NULL protein_target_max_g"
+    },
+    {
+      "table_name": "user_targets",
+      "conname": "user_targets_protein_target_min_g_not_null",
+      "contype": "n",
+      "definition": "NOT NULL protein_target_min_g"
+    },
+    {
+      "table_name": "user_targets",
+      "conname": "user_targets_step_target_not_null",
+      "contype": "n",
+      "definition": "NOT NULL step_target"
+    },
+    {
+      "table_name": "user_targets",
+      "conname": "user_targets_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "user_targets",
+      "conname": "user_targets_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "user_targets",
+      "conname": "user_targets_water_target_ml_not_null",
+      "contype": "n",
+      "definition": "NOT NULL water_target_ml"
+    },
+    {
+      "table_name": "user_targets",
+      "conname": "user_targets_workout_days_per_week_not_null",
+      "contype": "n",
+      "definition": "NOT NULL workout_days_per_week"
+    },
+    {
+      "table_name": "verification",
+      "conname": "verification_expires_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL expires_at"
+    },
+    {
+      "table_name": "verification",
+      "conname": "verification_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "verification",
+      "conname": "verification_identifier_not_null",
+      "contype": "n",
+      "definition": "NOT NULL identifier"
+    },
+    {
+      "table_name": "verification",
+      "conname": "verification_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "verification",
+      "conname": "verification_value_not_null",
+      "contype": "n",
+      "definition": "NOT NULL value"
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "conname": "workout_day_exercises_exercise_id_exercises_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (exercise_id) REFERENCES exercises(id)"
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "conname": "workout_day_exercises_exercise_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL exercise_id"
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "conname": "workout_day_exercises_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "conname": "workout_day_exercises_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "conname": "workout_day_exercises_sort_order_not_null",
+      "contype": "n",
+      "definition": "NOT NULL sort_order"
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "conname": "workout_day_exercises_target_sets_not_null",
+      "contype": "n",
+      "definition": "NOT NULL target_sets"
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "conname": "workout_day_exercises_workout_day_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL workout_day_id"
+    },
+    {
+      "table_name": "workout_day_exercises",
+      "conname": "workout_day_exercises_workout_day_id_workout_days_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (workout_day_id) REFERENCES workout_days(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "workout_days",
+      "conname": "workout_days_day_number_not_null",
+      "contype": "n",
+      "definition": "NOT NULL day_number"
+    },
+    {
+      "table_name": "workout_days",
+      "conname": "workout_days_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "workout_days",
+      "conname": "workout_days_name_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name"
+    },
+    {
+      "table_name": "workout_days",
+      "conname": "workout_days_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "workout_days",
+      "conname": "workout_days_workout_plan_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL workout_plan_id"
+    },
+    {
+      "table_name": "workout_days",
+      "conname": "workout_days_workout_plan_id_workout_plans_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (workout_plan_id) REFERENCES workout_plans(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "workout_plans",
+      "conname": "workout_plans_created_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL created_at"
+    },
+    {
+      "table_name": "workout_plans",
+      "conname": "workout_plans_days_per_week_not_null",
+      "contype": "n",
+      "definition": "NOT NULL days_per_week"
+    },
+    {
+      "table_name": "workout_plans",
+      "conname": "workout_plans_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "workout_plans",
+      "conname": "workout_plans_name_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name"
+    },
+    {
+      "table_name": "workout_plans",
+      "conname": "workout_plans_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "workout_plans",
+      "conname": "workout_plans_status_not_null",
+      "contype": "n",
+      "definition": "NOT NULL status"
+    },
+    {
+      "table_name": "workout_plans",
+      "conname": "workout_plans_updated_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL updated_at"
+    },
+    {
+      "table_name": "workout_plans",
+      "conname": "workout_plans_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "workout_plans",
+      "conname": "workout_plans_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "workout_session_exercises",
+      "conname": "workout_session_exercises_exercise_id_exercises_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (exercise_id) REFERENCES exercises(id) ON DELETE SET NULL"
+    },
+    {
+      "table_name": "workout_session_exercises",
+      "conname": "workout_session_exercises_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "workout_session_exercises",
+      "conname": "workout_session_exercises_name_snapshot_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name_snapshot"
+    },
+    {
+      "table_name": "workout_session_exercises",
+      "conname": "workout_session_exercises_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "workout_session_exercises",
+      "conname": "workout_session_exercises_sort_order_not_null",
+      "contype": "n",
+      "definition": "NOT NULL sort_order"
+    },
+    {
+      "table_name": "workout_session_exercises",
+      "conname": "workout_session_exercises_workout_session_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL workout_session_id"
+    },
+    {
+      "table_name": "workout_session_exercises",
+      "conname": "workout_session_exercises_workout_session_id_workout_sessions_i",
+      "contype": "f",
+      "definition": "FOREIGN KEY (workout_session_id) REFERENCES workout_sessions(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "workout_sessions",
+      "conname": "workout_sessions_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL id"
+    },
+    {
+      "table_name": "workout_sessions",
+      "conname": "workout_sessions_name_snapshot_not_null",
+      "contype": "n",
+      "definition": "NOT NULL name_snapshot"
+    },
+    {
+      "table_name": "workout_sessions",
+      "conname": "workout_sessions_pkey",
+      "contype": "p",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "workout_sessions",
+      "conname": "workout_sessions_started_at_not_null",
+      "contype": "n",
+      "definition": "NOT NULL started_at"
+    },
+    {
+      "table_name": "workout_sessions",
+      "conname": "workout_sessions_status_not_null",
+      "contype": "n",
+      "definition": "NOT NULL status"
+    },
+    {
+      "table_name": "workout_sessions",
+      "conname": "workout_sessions_user_id_not_null",
+      "contype": "n",
+      "definition": "NOT NULL user_id"
+    },
+    {
+      "table_name": "workout_sessions",
+      "conname": "workout_sessions_user_id_user_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (user_id) REFERENCES \"user\"(id) ON DELETE CASCADE"
+    },
+    {
+      "table_name": "workout_sessions",
+      "conname": "workout_sessions_workout_day_id_workout_days_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (workout_day_id) REFERENCES workout_days(id) ON DELETE SET NULL"
+    },
+    {
+      "table_name": "workout_sessions",
+      "conname": "workout_sessions_workout_plan_id_workout_plans_id_fk",
+      "contype": "f",
+      "definition": "FOREIGN KEY (workout_plan_id) REFERENCES workout_plans(id) ON DELETE SET NULL"
+    }
+  ],
+  "indexes": [
+    {
+      "tablename": "account",
+      "indexname": "account_pkey",
+      "indexdef": "CREATE UNIQUE INDEX account_pkey ON public.account USING btree (id)"
+    },
+    {
+      "tablename": "account",
+      "indexname": "account_provider_account_unique",
+      "indexdef": "CREATE UNIQUE INDEX account_provider_account_unique ON public.account USING btree (provider_id, account_id)"
+    },
+    {
+      "tablename": "account",
+      "indexname": "account_user_id_idx",
+      "indexdef": "CREATE INDEX account_user_id_idx ON public.account USING btree (user_id)"
+    },
+    {
+      "tablename": "allergens",
+      "indexname": "allergens_pkey",
+      "indexdef": "CREATE UNIQUE INDEX allergens_pkey ON public.allergens USING btree (id)"
+    },
+    {
+      "tablename": "allergens",
+      "indexname": "allergens_slug_unique",
+      "indexdef": "CREATE UNIQUE INDEX allergens_slug_unique ON public.allergens USING btree (slug)"
+    },
+    {
+      "tablename": "body_measurements",
+      "indexname": "body_measurements_pkey",
+      "indexdef": "CREATE UNIQUE INDEX body_measurements_pkey ON public.body_measurements USING btree (id)"
+    },
+    {
+      "tablename": "body_measurements",
+      "indexname": "body_measurements_user_time_idx",
+      "indexdef": "CREATE INDEX body_measurements_user_time_idx ON public.body_measurements USING btree (user_id, measured_at)"
+    },
+    {
+      "tablename": "daily_habit_logs",
+      "indexname": "daily_habit_logs_pkey",
+      "indexdef": "CREATE UNIQUE INDEX daily_habit_logs_pkey ON public.daily_habit_logs USING btree (id)"
+    },
+    {
+      "tablename": "daily_habit_logs",
+      "indexname": "daily_habit_logs_user_date_idx",
+      "indexdef": "CREATE INDEX daily_habit_logs_user_date_idx ON public.daily_habit_logs USING btree (user_id, log_date)"
+    },
+    {
+      "tablename": "daily_habit_logs",
+      "indexname": "daily_habit_logs_user_date_unique",
+      "indexdef": "CREATE UNIQUE INDEX daily_habit_logs_user_date_unique ON public.daily_habit_logs USING btree (user_id, log_date)"
+    },
+    {
+      "tablename": "dietary_preferences",
+      "indexname": "dietary_preferences_pkey",
+      "indexdef": "CREATE UNIQUE INDEX dietary_preferences_pkey ON public.dietary_preferences USING btree (id)"
+    },
+    {
+      "tablename": "dietary_preferences",
+      "indexname": "dietary_preferences_slug_unique",
+      "indexdef": "CREATE UNIQUE INDEX dietary_preferences_slug_unique ON public.dietary_preferences USING btree (slug)"
+    },
+    {
+      "tablename": "equipment",
+      "indexname": "equipment_pkey",
+      "indexdef": "CREATE UNIQUE INDEX equipment_pkey ON public.equipment USING btree (id)"
+    },
+    {
+      "tablename": "equipment",
+      "indexname": "equipment_slug_unique",
+      "indexdef": "CREATE UNIQUE INDEX equipment_slug_unique ON public.equipment USING btree (slug)"
+    },
+    {
+      "tablename": "exercise_categories",
+      "indexname": "exercise_categories_pkey",
+      "indexdef": "CREATE UNIQUE INDEX exercise_categories_pkey ON public.exercise_categories USING btree (id)"
+    },
+    {
+      "tablename": "exercise_categories",
+      "indexname": "exercise_categories_slug_unique",
+      "indexdef": "CREATE UNIQUE INDEX exercise_categories_slug_unique ON public.exercise_categories USING btree (slug)"
+    },
+    {
+      "tablename": "exercise_equipment",
+      "indexname": "exercise_equipment_unique",
+      "indexdef": "CREATE UNIQUE INDEX exercise_equipment_unique ON public.exercise_equipment USING btree (exercise_id, equipment_id)"
+    },
+    {
+      "tablename": "exercise_media",
+      "indexname": "exercise_media_unique",
+      "indexdef": "CREATE UNIQUE INDEX exercise_media_unique ON public.exercise_media USING btree (exercise_id, media_asset_id, role)"
+    },
+    {
+      "tablename": "exercise_muscle_groups",
+      "indexname": "exercise_muscle_groups_unique",
+      "indexdef": "CREATE UNIQUE INDEX exercise_muscle_groups_unique ON public.exercise_muscle_groups USING btree (exercise_id, muscle_group_id, role)"
+    },
+    {
+      "tablename": "exercise_sets",
+      "indexname": "exercise_sets_number_unique",
+      "indexdef": "CREATE UNIQUE INDEX exercise_sets_number_unique ON public.exercise_sets USING btree (session_exercise_id, set_number)"
+    },
+    {
+      "tablename": "exercise_sets",
+      "indexname": "exercise_sets_pkey",
+      "indexdef": "CREATE UNIQUE INDEX exercise_sets_pkey ON public.exercise_sets USING btree (id)"
+    },
+    {
+      "tablename": "exercises",
+      "indexname": "exercises_category_active_idx",
+      "indexdef": "CREATE INDEX exercises_category_active_idx ON public.exercises USING btree (category_id, is_active)"
+    },
+    {
+      "tablename": "exercises",
+      "indexname": "exercises_pkey",
+      "indexdef": "CREATE UNIQUE INDEX exercises_pkey ON public.exercises USING btree (id)"
+    },
+    {
+      "tablename": "exercises",
+      "indexname": "exercises_slug_unique",
+      "indexdef": "CREATE UNIQUE INDEX exercises_slug_unique ON public.exercises USING btree (slug)"
+    },
+    {
+      "tablename": "food_allergens",
+      "indexname": "food_allergens_unique",
+      "indexdef": "CREATE UNIQUE INDEX food_allergens_unique ON public.food_allergens USING btree (food_id, allergen_id)"
+    },
+    {
+      "tablename": "food_categories",
+      "indexname": "food_categories_pkey",
+      "indexdef": "CREATE UNIQUE INDEX food_categories_pkey ON public.food_categories USING btree (id)"
+    },
+    {
+      "tablename": "food_categories",
+      "indexname": "food_categories_slug_unique",
+      "indexdef": "CREATE UNIQUE INDEX food_categories_slug_unique ON public.food_categories USING btree (slug)"
+    },
+    {
+      "tablename": "foods",
+      "indexname": "foods_category_active_idx",
+      "indexdef": "CREATE INDEX foods_category_active_idx ON public.foods USING btree (category_id, is_active)"
+    },
+    {
+      "tablename": "foods",
+      "indexname": "foods_pkey",
+      "indexdef": "CREATE UNIQUE INDEX foods_pkey ON public.foods USING btree (id)"
+    },
+    {
+      "tablename": "foods",
+      "indexname": "foods_slug_unique",
+      "indexdef": "CREATE UNIQUE INDEX foods_slug_unique ON public.foods USING btree (slug)"
+    },
+    {
+      "tablename": "meal_logs",
+      "indexname": "meal_logs_pkey",
+      "indexdef": "CREATE UNIQUE INDEX meal_logs_pkey ON public.meal_logs USING btree (id)"
+    },
+    {
+      "tablename": "meal_logs",
+      "indexname": "meal_logs_user_time_idx",
+      "indexdef": "CREATE INDEX meal_logs_user_time_idx ON public.meal_logs USING btree (user_id, logged_at)"
+    },
+    {
+      "tablename": "meal_plan_entries",
+      "indexname": "meal_plan_entries_day_idx",
+      "indexdef": "CREATE INDEX meal_plan_entries_day_idx ON public.meal_plan_entries USING btree (meal_plan_id, planned_date)"
+    },
+    {
+      "tablename": "meal_plan_entries",
+      "indexname": "meal_plan_entries_pkey",
+      "indexdef": "CREATE UNIQUE INDEX meal_plan_entries_pkey ON public.meal_plan_entries USING btree (id)"
+    },
+    {
+      "tablename": "meal_plans",
+      "indexname": "meal_plans_pkey",
+      "indexdef": "CREATE UNIQUE INDEX meal_plans_pkey ON public.meal_plans USING btree (id)"
+    },
+    {
+      "tablename": "meal_plans",
+      "indexname": "meal_plans_user_dates_idx",
+      "indexdef": "CREATE INDEX meal_plans_user_dates_idx ON public.meal_plans USING btree (user_id, starts_on, ends_on)"
+    },
+    {
+      "tablename": "media_assets",
+      "indexname": "media_assets_pkey",
+      "indexdef": "CREATE UNIQUE INDEX media_assets_pkey ON public.media_assets USING btree (id)"
+    },
+    {
+      "tablename": "media_assets",
+      "indexname": "media_assets_provider_external_unique",
+      "indexdef": "CREATE UNIQUE INDEX media_assets_provider_external_unique ON public.media_assets USING btree (storage_provider, external_id)"
+    },
+    {
+      "tablename": "media_assets",
+      "indexname": "media_assets_type_approved_idx",
+      "indexdef": "CREATE INDEX media_assets_type_approved_idx ON public.media_assets USING btree (media_type, is_approved)"
+    },
+    {
+      "tablename": "muscle_groups",
+      "indexname": "muscle_groups_pkey",
+      "indexdef": "CREATE UNIQUE INDEX muscle_groups_pkey ON public.muscle_groups USING btree (id)"
+    },
+    {
+      "tablename": "muscle_groups",
+      "indexname": "muscle_groups_slug_unique",
+      "indexdef": "CREATE UNIQUE INDEX muscle_groups_slug_unique ON public.muscle_groups USING btree (slug)"
+    },
+    {
+      "tablename": "personal_records",
+      "indexname": "personal_records_pkey",
+      "indexdef": "CREATE UNIQUE INDEX personal_records_pkey ON public.personal_records USING btree (id)"
+    },
+    {
+      "tablename": "personal_records",
+      "indexname": "personal_records_user_type_idx",
+      "indexdef": "CREATE INDEX personal_records_user_type_idx ON public.personal_records USING btree (user_id, record_type)"
+    },
+    {
+      "tablename": "profiles",
+      "indexname": "profiles_pkey",
+      "indexdef": "CREATE UNIQUE INDEX profiles_pkey ON public.profiles USING btree (id)"
+    },
+    {
+      "tablename": "profiles",
+      "indexname": "profiles_user_id_unique",
+      "indexdef": "CREATE UNIQUE INDEX profiles_user_id_unique ON public.profiles USING btree (user_id)"
+    },
+    {
+      "tablename": "progress_photos",
+      "indexname": "progress_photos_pkey",
+      "indexdef": "CREATE UNIQUE INDEX progress_photos_pkey ON public.progress_photos USING btree (id)"
+    },
+    {
+      "tablename": "progress_photos",
+      "indexname": "progress_photos_user_date_idx",
+      "indexdef": "CREATE INDEX progress_photos_user_date_idx ON public.progress_photos USING btree (user_id, captured_on)"
+    },
+    {
+      "tablename": "recipe_dietary_preferences",
+      "indexname": "recipe_dietary_preferences_unique",
+      "indexdef": "CREATE UNIQUE INDEX recipe_dietary_preferences_unique ON public.recipe_dietary_preferences USING btree (recipe_id, dietary_preference_id)"
+    },
+    {
+      "tablename": "recipe_ingredients",
+      "indexname": "recipe_ingredients_order_unique",
+      "indexdef": "CREATE UNIQUE INDEX recipe_ingredients_order_unique ON public.recipe_ingredients USING btree (recipe_id, sort_order)"
+    },
+    {
+      "tablename": "recipe_ingredients",
+      "indexname": "recipe_ingredients_pkey",
+      "indexdef": "CREATE UNIQUE INDEX recipe_ingredients_pkey ON public.recipe_ingredients USING btree (id)"
+    },
+    {
+      "tablename": "recipe_media",
+      "indexname": "recipe_media_unique",
+      "indexdef": "CREATE UNIQUE INDEX recipe_media_unique ON public.recipe_media USING btree (recipe_id, media_asset_id, role)"
+    },
+    {
+      "tablename": "recipe_steps",
+      "indexname": "recipe_steps_order_unique",
+      "indexdef": "CREATE UNIQUE INDEX recipe_steps_order_unique ON public.recipe_steps USING btree (recipe_id, sort_order)"
+    },
+    {
+      "tablename": "recipe_steps",
+      "indexname": "recipe_steps_pkey",
+      "indexdef": "CREATE UNIQUE INDEX recipe_steps_pkey ON public.recipe_steps USING btree (id)"
+    },
+    {
+      "tablename": "recipe_tag_links",
+      "indexname": "recipe_tag_links_unique",
+      "indexdef": "CREATE UNIQUE INDEX recipe_tag_links_unique ON public.recipe_tag_links USING btree (recipe_id, recipe_tag_id)"
+    },
+    {
+      "tablename": "recipe_tags",
+      "indexname": "recipe_tags_pkey",
+      "indexdef": "CREATE UNIQUE INDEX recipe_tags_pkey ON public.recipe_tags USING btree (id)"
+    },
+    {
+      "tablename": "recipe_tags",
+      "indexname": "recipe_tags_slug_unique",
+      "indexdef": "CREATE UNIQUE INDEX recipe_tags_slug_unique ON public.recipe_tags USING btree (slug)"
+    },
+    {
+      "tablename": "recipes",
+      "indexname": "recipes_discovery_idx",
+      "indexdef": "CREATE INDEX recipes_discovery_idx ON public.recipes USING btree (status, is_public, meal_type)"
+    },
+    {
+      "tablename": "recipes",
+      "indexname": "recipes_pkey",
+      "indexdef": "CREATE UNIQUE INDEX recipes_pkey ON public.recipes USING btree (id)"
+    },
+    {
+      "tablename": "recipes",
+      "indexname": "recipes_slug_unique",
+      "indexdef": "CREATE UNIQUE INDEX recipes_slug_unique ON public.recipes USING btree (slug)"
+    },
+    {
+      "tablename": "session",
+      "indexname": "session_pkey",
+      "indexdef": "CREATE UNIQUE INDEX session_pkey ON public.session USING btree (id)"
+    },
+    {
+      "tablename": "session",
+      "indexname": "session_token_unique",
+      "indexdef": "CREATE UNIQUE INDEX session_token_unique ON public.session USING btree (token)"
+    },
+    {
+      "tablename": "session",
+      "indexname": "session_user_id_idx",
+      "indexdef": "CREATE INDEX session_user_id_idx ON public.session USING btree (user_id)"
+    },
+    {
+      "tablename": "user",
+      "indexname": "user_email_unique",
+      "indexdef": "CREATE UNIQUE INDEX user_email_unique ON public.\"user\" USING btree (email)"
+    },
+    {
+      "tablename": "user",
+      "indexname": "user_pkey",
+      "indexdef": "CREATE UNIQUE INDEX user_pkey ON public.\"user\" USING btree (id)"
+    },
+    {
+      "tablename": "user_allergens",
+      "indexname": "user_allergens_pkey",
+      "indexdef": "CREATE UNIQUE INDEX user_allergens_pkey ON public.user_allergens USING btree (id)"
+    },
+    {
+      "tablename": "user_allergens",
+      "indexname": "user_allergens_unique",
+      "indexdef": "CREATE UNIQUE INDEX user_allergens_unique ON public.user_allergens USING btree (user_id, allergen_id)"
+    },
+    {
+      "tablename": "user_dietary_preferences",
+      "indexname": "user_dietary_preferences_unique",
+      "indexdef": "CREATE UNIQUE INDEX user_dietary_preferences_unique ON public.user_dietary_preferences USING btree (user_id, dietary_preference_id)"
+    },
+    {
+      "tablename": "user_equipment",
+      "indexname": "user_equipment_pkey",
+      "indexdef": "CREATE UNIQUE INDEX user_equipment_pkey ON public.user_equipment USING btree (id)"
+    },
+    {
+      "tablename": "user_equipment",
+      "indexname": "user_equipment_unique",
+      "indexdef": "CREATE UNIQUE INDEX user_equipment_unique ON public.user_equipment USING btree (user_id, equipment_id)"
+    },
+    {
+      "tablename": "user_goals",
+      "indexname": "user_goals_active_primary_unique",
+      "indexdef": "CREATE UNIQUE INDEX user_goals_active_primary_unique ON public.user_goals USING btree (user_id) WHERE ((is_primary = true) AND (ends_on IS NULL))"
+    },
+    {
+      "tablename": "user_goals",
+      "indexname": "user_goals_pkey",
+      "indexdef": "CREATE UNIQUE INDEX user_goals_pkey ON public.user_goals USING btree (id)"
+    },
+    {
+      "tablename": "user_goals",
+      "indexname": "user_goals_user_id_idx",
+      "indexdef": "CREATE INDEX user_goals_user_id_idx ON public.user_goals USING btree (user_id)"
+    },
+    {
+      "tablename": "user_targets",
+      "indexname": "user_targets_pkey",
+      "indexdef": "CREATE UNIQUE INDEX user_targets_pkey ON public.user_targets USING btree (id)"
+    },
+    {
+      "tablename": "user_targets",
+      "indexname": "user_targets_user_effective_idx",
+      "indexdef": "CREATE INDEX user_targets_user_effective_idx ON public.user_targets USING btree (user_id, effective_from)"
+    },
+    {
+      "tablename": "verification",
+      "indexname": "verification_identifier_idx",
+      "indexdef": "CREATE INDEX verification_identifier_idx ON public.verification USING btree (identifier)"
+    },
+    {
+      "tablename": "verification",
+      "indexname": "verification_pkey",
+      "indexdef": "CREATE UNIQUE INDEX verification_pkey ON public.verification USING btree (id)"
+    },
+    {
+      "tablename": "workout_day_exercises",
+      "indexname": "workout_day_exercises_order_unique",
+      "indexdef": "CREATE UNIQUE INDEX workout_day_exercises_order_unique ON public.workout_day_exercises USING btree (workout_day_id, sort_order)"
+    },
+    {
+      "tablename": "workout_day_exercises",
+      "indexname": "workout_day_exercises_pkey",
+      "indexdef": "CREATE UNIQUE INDEX workout_day_exercises_pkey ON public.workout_day_exercises USING btree (id)"
+    },
+    {
+      "tablename": "workout_days",
+      "indexname": "workout_days_pkey",
+      "indexdef": "CREATE UNIQUE INDEX workout_days_pkey ON public.workout_days USING btree (id)"
+    },
+    {
+      "tablename": "workout_days",
+      "indexname": "workout_days_plan_day_unique",
+      "indexdef": "CREATE UNIQUE INDEX workout_days_plan_day_unique ON public.workout_days USING btree (workout_plan_id, day_number)"
+    },
+    {
+      "tablename": "workout_plans",
+      "indexname": "workout_plans_pkey",
+      "indexdef": "CREATE UNIQUE INDEX workout_plans_pkey ON public.workout_plans USING btree (id)"
+    },
+    {
+      "tablename": "workout_plans",
+      "indexname": "workout_plans_user_status_idx",
+      "indexdef": "CREATE INDEX workout_plans_user_status_idx ON public.workout_plans USING btree (user_id, status)"
+    },
+    {
+      "tablename": "workout_session_exercises",
+      "indexname": "workout_session_exercises_order_unique",
+      "indexdef": "CREATE UNIQUE INDEX workout_session_exercises_order_unique ON public.workout_session_exercises USING btree (workout_session_id, sort_order)"
+    },
+    {
+      "tablename": "workout_session_exercises",
+      "indexname": "workout_session_exercises_pkey",
+      "indexdef": "CREATE UNIQUE INDEX workout_session_exercises_pkey ON public.workout_session_exercises USING btree (id)"
+    },
+    {
+      "tablename": "workout_sessions",
+      "indexname": "workout_sessions_pkey",
+      "indexdef": "CREATE UNIQUE INDEX workout_sessions_pkey ON public.workout_sessions USING btree (id)"
+    },
+    {
+      "tablename": "workout_sessions",
+      "indexname": "workout_sessions_user_started_idx",
+      "indexdef": "CREATE INDEX workout_sessions_user_started_idx ON public.workout_sessions USING btree (user_id, started_at)"
+    }
+  ],
+  "enums": [
+    {
+      "typname": "allergy_severity",
+      "enumlabel": "mild"
+    },
+    {
+      "typname": "allergy_severity",
+      "enumlabel": "moderate"
+    },
+    {
+      "typname": "allergy_severity",
+      "enumlabel": "severe"
+    },
+    {
+      "typname": "biological_sex",
+      "enumlabel": "female"
+    },
+    {
+      "typname": "biological_sex",
+      "enumlabel": "male"
+    },
+    {
+      "typname": "biological_sex",
+      "enumlabel": "intersex"
+    },
+    {
+      "typname": "biological_sex",
+      "enumlabel": "prefer_not_to_say"
+    },
+    {
+      "typname": "content_status",
+      "enumlabel": "draft"
+    },
+    {
+      "typname": "content_status",
+      "enumlabel": "published"
+    },
+    {
+      "typname": "content_status",
+      "enumlabel": "archived"
+    },
+    {
+      "typname": "exercise_difficulty",
+      "enumlabel": "beginner"
+    },
+    {
+      "typname": "exercise_difficulty",
+      "enumlabel": "intermediate"
+    },
+    {
+      "typname": "exercise_difficulty",
+      "enumlabel": "advanced"
+    },
+    {
+      "typname": "fitness_goal",
+      "enumlabel": "body_recomposition"
+    },
+    {
+      "typname": "fitness_goal",
+      "enumlabel": "fat_loss"
+    },
+    {
+      "typname": "fitness_goal",
+      "enumlabel": "muscle_gain"
+    },
+    {
+      "typname": "fitness_goal",
+      "enumlabel": "general_fitness"
+    },
+    {
+      "typname": "fitness_goal",
+      "enumlabel": "strength"
+    },
+    {
+      "typname": "fitness_goal",
+      "enumlabel": "endurance"
+    },
+    {
+      "typname": "meal_type",
+      "enumlabel": "breakfast"
+    },
+    {
+      "typname": "meal_type",
+      "enumlabel": "snack"
+    },
+    {
+      "typname": "meal_type",
+      "enumlabel": "lunch"
+    },
+    {
+      "typname": "meal_type",
+      "enumlabel": "pre_workout"
+    },
+    {
+      "typname": "meal_type",
+      "enumlabel": "post_workout"
+    },
+    {
+      "typname": "meal_type",
+      "enumlabel": "dinner"
+    },
+    {
+      "typname": "measurement_source",
+      "enumlabel": "manual"
+    },
+    {
+      "typname": "measurement_source",
+      "enumlabel": "apple_health"
+    },
+    {
+      "typname": "measurement_source",
+      "enumlabel": "samsung_health"
+    },
+    {
+      "typname": "measurement_source",
+      "enumlabel": "health_connect"
+    },
+    {
+      "typname": "measurement_source",
+      "enumlabel": "import"
+    },
+    {
+      "typname": "media_provider",
+      "enumlabel": "vercel_blob"
+    },
+    {
+      "typname": "media_provider",
+      "enumlabel": "cloudinary"
+    },
+    {
+      "typname": "media_provider",
+      "enumlabel": "unsplash"
+    },
+    {
+      "typname": "media_provider",
+      "enumlabel": "pexels"
+    },
+    {
+      "typname": "media_provider",
+      "enumlabel": "wikimedia"
+    },
+    {
+      "typname": "media_provider",
+      "enumlabel": "youtube"
+    },
+    {
+      "typname": "media_provider",
+      "enumlabel": "external"
+    },
+    {
+      "typname": "media_role",
+      "enumlabel": "cover"
+    },
+    {
+      "typname": "media_role",
+      "enumlabel": "gallery"
+    },
+    {
+      "typname": "media_role",
+      "enumlabel": "video"
+    },
+    {
+      "typname": "media_type",
+      "enumlabel": "food_photo"
+    },
+    {
+      "typname": "media_type",
+      "enumlabel": "recipe_photo"
+    },
+    {
+      "typname": "media_type",
+      "enumlabel": "exercise_illustration"
+    },
+    {
+      "typname": "media_type",
+      "enumlabel": "exercise_video"
+    },
+    {
+      "typname": "media_type",
+      "enumlabel": "progress_photo"
+    },
+    {
+      "typname": "movement_pattern",
+      "enumlabel": "push"
+    },
+    {
+      "typname": "movement_pattern",
+      "enumlabel": "pull"
+    },
+    {
+      "typname": "movement_pattern",
+      "enumlabel": "squat"
+    },
+    {
+      "typname": "movement_pattern",
+      "enumlabel": "hinge"
+    },
+    {
+      "typname": "movement_pattern",
+      "enumlabel": "lunge"
+    },
+    {
+      "typname": "movement_pattern",
+      "enumlabel": "carry"
+    },
+    {
+      "typname": "movement_pattern",
+      "enumlabel": "rotation"
+    },
+    {
+      "typname": "movement_pattern",
+      "enumlabel": "anti_rotation"
+    },
+    {
+      "typname": "movement_pattern",
+      "enumlabel": "locomotion"
+    },
+    {
+      "typname": "movement_pattern",
+      "enumlabel": "isolation"
+    },
+    {
+      "typname": "muscle_role",
+      "enumlabel": "primary"
+    },
+    {
+      "typname": "muscle_role",
+      "enumlabel": "secondary"
+    },
+    {
+      "typname": "photo_pose",
+      "enumlabel": "front"
+    },
+    {
+      "typname": "photo_pose",
+      "enumlabel": "side"
+    },
+    {
+      "typname": "photo_pose",
+      "enumlabel": "back"
+    },
+    {
+      "typname": "photo_pose",
+      "enumlabel": "other"
+    },
+    {
+      "typname": "plan_status",
+      "enumlabel": "draft"
+    },
+    {
+      "typname": "plan_status",
+      "enumlabel": "active"
+    },
+    {
+      "typname": "plan_status",
+      "enumlabel": "completed"
+    },
+    {
+      "typname": "plan_status",
+      "enumlabel": "archived"
+    },
+    {
+      "typname": "recipe_difficulty",
+      "enumlabel": "easy"
+    },
+    {
+      "typname": "recipe_difficulty",
+      "enumlabel": "moderate"
+    },
+    {
+      "typname": "recipe_difficulty",
+      "enumlabel": "advanced"
+    },
+    {
+      "typname": "serving_unit",
+      "enumlabel": "g"
+    },
+    {
+      "typname": "serving_unit",
+      "enumlabel": "kg"
+    },
+    {
+      "typname": "serving_unit",
+      "enumlabel": "ml"
+    },
+    {
+      "typname": "serving_unit",
+      "enumlabel": "l"
+    },
+    {
+      "typname": "serving_unit",
+      "enumlabel": "tsp"
+    },
+    {
+      "typname": "serving_unit",
+      "enumlabel": "tbsp"
+    },
+    {
+      "typname": "serving_unit",
+      "enumlabel": "cup"
+    },
+    {
+      "typname": "serving_unit",
+      "enumlabel": "item"
+    },
+    {
+      "typname": "serving_unit",
+      "enumlabel": "slice"
+    },
+    {
+      "typname": "serving_unit",
+      "enumlabel": "scoop"
+    },
+    {
+      "typname": "serving_unit",
+      "enumlabel": "serving"
+    },
+    {
+      "typname": "set_type",
+      "enumlabel": "warmup"
+    },
+    {
+      "typname": "set_type",
+      "enumlabel": "working"
+    },
+    {
+      "typname": "set_type",
+      "enumlabel": "drop"
+    },
+    {
+      "typname": "set_type",
+      "enumlabel": "failure"
+    },
+    {
+      "typname": "unit_system",
+      "enumlabel": "metric"
+    },
+    {
+      "typname": "unit_system",
+      "enumlabel": "imperial"
+    },
+    {
+      "typname": "user_role",
+      "enumlabel": "user"
+    },
+    {
+      "typname": "user_role",
+      "enumlabel": "admin"
+    },
+    {
+      "typname": "workout_session_status",
+      "enumlabel": "planned"
+    },
+    {
+      "typname": "workout_session_status",
+      "enumlabel": "in_progress"
+    },
+    {
+      "typname": "workout_session_status",
+      "enumlabel": "completed"
+    },
+    {
+      "typname": "workout_session_status",
+      "enumlabel": "cancelled"
+    }
+  ],
+  "policies": [],
+  "triggers": [],
+  "history": [
+    {
+      "id": 1,
+      "hash": "d3da1118b4d0f418d70f24ca19c9d66763ab1f01bee0b93ec4517988215330c3",
+      "created_at": "1786025567892"
+    }
+  ]
+}
