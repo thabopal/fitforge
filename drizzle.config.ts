@@ -9,11 +9,14 @@ if (!process.env.DATABASE_URL) {
   );
 }
 
+// Legacy drizzle-kit migrate must not replay the incompatible local history.
+// Production migrations use db/migrate.ts and the separate forward ledger.
 export default defineConfig({
   schema: "./db/schema.ts",
-  out: "./drizzle",
+  out: "./drizzle/production/generated",
   dialect: "postgresql",
+  migrations: { schema: "fitforge_forward", table: "drizzle_generated_migrations" },
   dbCredentials: {
-    url: process.env.DATABASE_URL,
+    url: process.env.DATABASE_URL.replace("-pooler.", "."),
   },
 });

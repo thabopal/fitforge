@@ -7,10 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate",
-    "db:push": "drizzle-kit push",
-    "db:seed": "tsx db/seed.ts"
+    "db:generate": "tsx db/migrate.ts --generate",
+    "db:migrate": "tsx db/migrate.ts",
+    "db:push": "tsx db/migrate.ts --push",
+    "db:seed": "tsx db/seed.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test lib/*.test.ts db/*.test.ts",
+    "db:check": "tsx db/migrate.ts --check"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
